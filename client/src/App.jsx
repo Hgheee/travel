@@ -24,6 +24,9 @@ export default function App() {
         <Route path="/map" element={<MapPage />} />
         <Route path="/favorites" element={<Favorites />} />
       </Routes>
+      <h1 className="text-3xl font-bold text-violet-600">
+        Tailwind 동작 테스트!
+      </h1>
 
       {/* 하단 상태 표시 */}
       <footer style={{ padding: "16px", color: "#334155" }}>
