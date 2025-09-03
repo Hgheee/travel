@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import MapView from "./components/MapView";
 import Home from "./pages/Home";
 import MapPage from "./pages/Map";
 import Favorites from "./pages/Favorites";
@@ -24,11 +25,11 @@ export default function App() {
         <Route path="/map" element={<MapPage />} />
         <Route path="/favorites" element={<Favorites />} />
       </Routes>
-
-      {/* 하단 상태 표시 */}
-      <footer style={{ padding: "16px", color: "#334155" }}>
-        서버에서 온 메시지: {message}
-      </footer>
+      <div style={{ padding: 20 }}>
+        <h1>여행 지도</h1>
+        <MapView />
+        <p>서버 메시지: {message}</p>
+      </div>
     </div>
   );
 }
